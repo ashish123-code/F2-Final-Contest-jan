@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1 class="heading1">Click Sequentially Left to Right</h1>
+  <div class="flex-container">
+    <div class="flex-item" id="image-container">
+      <img src="./images/register.png" alt="Image 1">
+    </div>
+    <div class="flex-item" id="image-container">
+      <img src="./images/click.jpg" alt="Image 2">
+    </div>
+    <div class="flex-item" >
+      <img src="./images/start.png" alt="Image 3" id="img3"  onclick="show()">
+      <img src="./images/Dice.jpeg" alt="image 5" id="dice">
+    </div>
+    <div class="flex-item">
+      <img src="./images/happy.jpg" alt="Image 4" id="img4" onclick="generateString(length)">
+    </div>
+  </div>
+  <div class="form">
+    <form id="register-form"  style="display:none;" >
+      <h2 class="heading2">Fill the Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Name" required id="name"><br>
+      <label for="email">Email :</label>
+      <input type="email" placeholder="Email" required><br>
+      <label for="Username">UserName :</label>
+      <input type="text" placeholder="Username" required id="username"><br>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </div>
+  <div id="info">
+  </div>
+  <span id="score"></span><br>
+  <span id="sum"></span>
+
+  <span id="cupon"></span>
+
+ 
+  <script src="./script.js"></script>
+</body>
+
+</html>
